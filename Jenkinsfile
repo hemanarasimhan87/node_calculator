@@ -5,7 +5,7 @@ pipeline {
             steps {
                 script {
                     // Install dependencies
-                    sh 'npm install'
+                    bat 'npm install'
                 }
             }
         }
@@ -13,7 +13,7 @@ pipeline {
             steps {
                 script {
                     // Run unit tests
-                    sh 'npm run test:unit'
+                    bat 'npm run test:unit'
                 }
             }
         }
@@ -21,7 +21,7 @@ pipeline {
             steps {
                 script {
                     // Run integration tests
-                    sh 'npm run test:integration'
+                    bat 'npm run test:integration'
                 }
             }
         }
